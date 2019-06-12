@@ -25,11 +25,11 @@ if enable_config('march-tune-native', true)
   $CXXFLAGS << ' -march=native -mtune=native'
 end
 
-if enable_config('lto', true)
-  $CFLAGS << ' -flto'
-  $CXXFLAGS << ' -flto'
-  $LDFLAGS << ' -flto'
-end
+# if enable_config('lto', true)
+#   $CFLAGS << ' -flto'
+#   $CXXFLAGS << ' -flto'
+#   $LDFLAGS << ' -flto'
+# end
 
 # Disable noisy compilation warnings.
 $warnflags = ''
